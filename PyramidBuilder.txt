@@ -1,0 +1,16 @@
+// Pyramid Builder
+// by: myithspa25
+// (Eventually) a port of standardcombo's Pyramid Builder game into StoneScript.
+// Beware: probably terrible code ahead.
+
+// TODO: make code
+?loc = Waterfall & !loc.isQuest
+    //draw.Clear()
+    func ExitButton()
+        loc.Leave()
+    ?loc.begin
+        var exit = ui.AddButton()
+        exit.y = 1
+        exit.x = -@screen.w/2@
+        exit.text = "Exit"
+        exit.SetPressed(ExitButton)
