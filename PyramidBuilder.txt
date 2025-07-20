@@ -11,6 +11,6 @@
     ?loc.begin
         var exit = ui.AddButton()
         exit.y = 1
-        exit.x = -@screen.w/2@
+        exit.x = @-screen.w/2@ //why does this throw an error? "Attempting to access member variable on non-object"
         exit.text = "Exit"
         exit.SetPressed(ExitButton)
