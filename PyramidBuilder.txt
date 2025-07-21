@@ -6,13 +6,13 @@
 // TODO: make code
 ?loc = Waterfall & !loc.isQuest
     //draw.Clear()
-    >`15,1,Version: Test 4 | branch: fix-button-position
+    >`15,1,Version: Test 5 | branch: fix-button-position
     func ExitButton()
         loc.Leave()
     ?loc.begin
         draw.Clear()
         var exit = ui.AddButton()
-        exit.y = (screen.h/2)-4
+        exit.y = (screen.h/2)-3
         exit.x = (-screen.w/2)+9
         exit.text = "Exit"
         exit.SetPressed(ExitButton)
