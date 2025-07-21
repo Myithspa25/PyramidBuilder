@@ -10,8 +10,9 @@
     func ExitButton()
         loc.Leave()
     ?loc.begin
+        draw.Clear()
         var exit = ui.AddButton()
-        exit.y = 10
-        exit.x = (-screen.w/2)+ 8
+        exit.y = (screen.h/2)-4
+        exit.x = (-screen.w/2)+9
         exit.text = "Exit"
         exit.SetPressed(ExitButton)
