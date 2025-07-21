@@ -6,11 +6,25 @@
 // TODO: make code
 ?loc = Waterfall & !loc.isQuest
     //draw.Clear()
+    >`15,1,Version: Test 6 | branch: fix-button-position
     func ExitButton()
         loc.Leave()
     ?loc.begin
+        draw.Clear()
+        // Exit button - might not even use this ngl
         var exit = ui.AddButton()
-        exit.y = 1
-        exit.x = -@screen.w/2@
+        exit.y = (screen.h/2)-3
+        exit.x = (-screen.w/2)+9
         exit.text = "Exit"
         exit.SetPressed(ExitButton)
+        // Variable setup
+        var cropCount = 0
+        // Ascii art
+        var houseAscii = ascii 
+        #______##
+        |\     \#
+        | \_____\
+        \ | .-. |
+        #\|_| |_|
+        asciiend
+        >`0,0,@houseAscii@
