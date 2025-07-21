@@ -6,7 +6,7 @@
 // TODO: make code
 ?loc = Waterfall & !loc.isQuest
     //draw.Clear()
-    >`15,1,Version: Test 6 | branch: fix-button-position
+    >`15,1,Version: Test 7 | branch: fix-button-position
     func ExitButton()
         loc.Leave()
     ?loc.begin
@@ -27,4 +27,4 @@
         \ | .-. |
         #\|_| |_|
         asciiend
-        >`0,0,@houseAscii@
+        //>`0,0,@houseAscii@
