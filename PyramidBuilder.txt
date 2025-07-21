@@ -6,12 +6,12 @@
 // TODO: make code
 ?loc = Waterfall & !loc.isQuest
     //draw.Clear()
-    >`2,1,"Version: Test 1 | branch: fix-button-position"
+    >`15,1,Version: Test 2 | branch: fix-button-position
     func ExitButton()
         loc.Leave()
     ?loc.begin
         var exit = ui.AddButton()
-        exit.y = 1
-        exit.x = @-screen.w/2@ //why does this throw an error? "Attempting to access member variable on non-object"
+        exit.y = -5
+        exit.x = -screen.w/2 //why does this throw an error? "Attempting to access member variable on non-object"
         exit.text = "Exit"
         exit.SetPressed(ExitButton)
